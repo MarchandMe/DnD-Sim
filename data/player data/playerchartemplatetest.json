@@ -1,0 +1,36 @@
+{
+	"type" : "Player Character Template",
+	"name" : "Test Character",
+	"class" : "Warlock",
+	"patron" : "Archfey",
+	"race" : "Elf",
+	"subrace" : "Wood Elf",
+	"alignment" : "Chaotic Neutral",
+	"level" : 2,
+	"exp" : 20,
+	"background" : "Folk Hero",
+	"description" : "A Character",
+	"portrait" : "DEFAULT",
+	"stats" : {
+		"strength" : 10,
+		"dexterity" : 12,
+		"constitution" : 8,
+		"intelligence" : 12,
+		"wisdom" : 16,
+		"charisma" : 17
+	},
+	
+	"physical attributes" : {
+		"age" : 45,
+		"height" : "170 cm",
+		"weight" : "60 kg",
+		"eyes" : "Blue",
+		"skin" : "White",
+		"hair color" : "Black",
+		"hair length" : "Short"
+	},
+	
+	
+	"dm notes": "None",
+	"player notes" : "None"
+}

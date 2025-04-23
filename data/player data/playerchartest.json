@@ -1,0 +1,178 @@
+{
+	"type" : "Player Character",
+	"player id" : "MC",
+	"name" : "Test Character",
+	"class" : "Warlock",
+	"patron" : "Archfey",
+	"race" : "Elf",
+	"subrace" : "Wood Elf",
+	"alignment" : "Chaotic Neutral",
+	"level" : 2,
+	"exp" : 20,
+	"background" : "Folk Hero",
+	"description" : "A Character",
+	"portrait" : "DEFAULT",
+	"stats" : {
+		"strength" : 10,
+		"dexterity" : 12,
+		"constitution" : 8,
+		"intelligence" : 12,
+		"wisdom" : 16,
+		"charisma" : 17
+	},
+	
+	"physical attributes" : {
+		"age" : 45,
+		"height" : "170 cm",
+		"weight" : "60 kg",
+		"eyes" : "Blue",
+		"skin" : "White",
+		"hair color" : "Black",
+		"hair length" : "Short"
+	},
+	
+	
+	"inspiration" : 0,
+	
+	"equipment" : {
+		"main weapon" : {
+			"name" : "Iron Sword",
+			"type" : "Shortsword",
+			"range" : "Melee",
+			"rarity" : "Common",
+			"material" : "Iron",
+			"modifiers" : {
+				
+			},
+			"description" : "Just a small iron sword, or is it..."
+		},
+		"offhand weapon" : {
+			"name" : "ISEMPTY"
+		},
+		"ranged weapon" : {
+			"name" : "ISEMPTY"
+		},
+		"rings" : {
+			
+		},
+		"hat" : {
+			"name" : "ISEMPTY"
+		},
+		"face" : {
+			"name" : "ISEMPTY"
+		},
+		"cape" : {
+			"name" : "ISEMPTY"
+		},
+		"left hand" : {
+			"name" : "ISEMPTY"
+		},
+		"right hand" : {
+			"name" : "ISEMPTY"
+		},
+		"left arm" : {
+			"name" : "ISEMPTY"
+		},
+		"right arm" : {
+			"name" : "ISEMPTY"
+		},
+		"chest" : {
+			"name" : "ISEMPTY"
+		},
+		"pants" : {
+			"name" : "ISEMPTY"
+		},
+		"left foot": {
+			"name" : "ISEMPTY"
+		},
+		"right foot" : {
+			"name" : "ISEMPTY"
+		}
+	},
+	
+	"inventory" : {
+		"potions" : {
+			
+		},
+		"misc" : {
+			
+		}
+	},
+	
+	"spells" : {
+		"cantrips" : {
+			"firebolt" : {
+				"type" : "damage",
+				"range" : "10 meters",
+				"school" : "evocation",
+				"description" : "A bolt of fire"
+			}
+		},
+		"level 1" : {
+			"slots total" : 4,
+			"slots left" : 3
+		},
+		"level 2" : {
+			
+		},
+		"level 3" : {
+			
+		},
+		"level 4" : {
+			
+		},
+		"level 5" : {
+			
+		},
+		"level 6" : {
+			
+		},
+		"level 7" : {
+			
+		},
+		"level 8" : {
+			
+		},
+		"level 9" : {
+			
+		},
+	},
+	
+	"saving throws" : {
+		"strength" : 0,
+		"dexterity" : 0,
+		"constitution" : 0,
+		"intelligence" : 0,
+		"wisdom" : 0,
+		"charisma" : 0
+	},
+	
+	"proficiencies" : {
+		"acrobatics" : 0 
+	},
+	
+	"hp" : {
+		"max" : 20,
+		"current" : 17,
+		"temporary" : 5
+	},
+	
+	"armor class" : 16,
+	"initiative" : 5,
+	"move speed" : "10 meters",
+	
+	"conditions" : {
+		
+	},
+	
+	"traits" : {
+		
+	},
+	
+	"tags" : {
+		
+	},
+	
+	"dm notes": "None",
+	"player notes" : "None"
+}
