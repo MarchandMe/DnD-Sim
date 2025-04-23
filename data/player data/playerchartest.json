@@ -49,7 +49,8 @@
 			"description" : "Just a small iron sword, or is it..."
 		},
 		"offhand weapon" : {
-			"name" : "ISEMPTY"
+			"name" : "LINK",
+			"path" : "itemtest.json"
 		},
 		"ranged weapon" : {
 			"name" : "ISEMPTY"
