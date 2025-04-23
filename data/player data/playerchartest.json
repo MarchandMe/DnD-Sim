@@ -41,6 +41,8 @@
 			"range" : "Melee",
 			"rarity" : "Common",
 			"material" : "Iron",
+			"damage" : "3 d6",
+			"_damage" : "3+d6",
 			"modifiers" : {
 				
 			},
