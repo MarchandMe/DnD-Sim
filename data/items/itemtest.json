@@ -1,0 +1,14 @@
+{
+	"type" : "Item",
+	"name" : "Iron Sword",
+	"type" : "Shortsword",
+	"range" : "Melee",
+	"rarity" : "Common",
+	"material" : "Iron",
+	"damage" : "3 d6",
+	"_damage" : "3+d6",
+	"modifiers" : {
+		
+	},
+	"description" : "Just a small iron sword, or is it..."
+}
