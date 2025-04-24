@@ -15,6 +15,10 @@ run/main_scene="uid://sr3utapbcjq7"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[dotnet]
+
+project/assembly_name="DnD Sim"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
