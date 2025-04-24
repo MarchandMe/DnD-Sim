@@ -1,0 +1,71 @@
+[gd_scene load_steps=3 format=3 uid="uid://sr3utapbcjq7"]
+
+[ext_resource type="Script" uid="uid://be4hfylxklhce" path="res://Scripts/game.gd" id="1_iukft"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_iukft"]
+load_path = "res://.godot/imported/Background.png-3c532b88ca2ff95721aa8d0294429b73.ctex"
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_iukft")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.499968, 36)
+scale = Vector2(0.9125, 1)
+texture = SubResource("CompressedTexture2D_iukft")
+metadata/_edit_lock_ = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.93, 0.93)
+metadata/_edit_lock_ = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -212.5
+offset_top = 109.0
+offset_right = 212.5
+offset_bottom = 176.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0.365221, 0.086627, 0.158895, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 48
+text = "DND-STIMULATOR"
+horizontal_alignment = 1
+metadata/_edit_lock_ = true
+
+[node name="New_Character" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -62.0
+offset_top = -47.0
+offset_right = 62.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "New Character
+"
+metadata/_edit_lock_ = true
+
+[node name="New_Game" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -51.5
+offset_top = 52.0
+offset_right = 51.5
+offset_bottom = 83.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Start Games"
+metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="New_Character" to="." method="_on_new_character_pressed"]
+[connection signal="pressed" from="New_Game" to="." method="_on_new_game_pressed"]
