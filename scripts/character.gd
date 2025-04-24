@@ -1,5 +1,8 @@
 extends Node2D
+
+
 @onready var grid = $AbilityContainer
+
 var item_data = ["Str :","Dex :","Con :","Int :","Wis :","Cha :"]
 @onready var value = $AmountContainer
 var value_data = ["10","3","11","10","8","2"]
@@ -7,6 +10,10 @@ var value_data = ["10","3","11","10","8","2"]
 var goods_data = ["Gold","Potional Healting","Arrows","Armor"]
 
 var line_length = 200
+var chardat = Global.load_json(Global.curchar)
+var ability_names = ["Str", "Dex", "Con", "Int", "Wis", "Cha"]
+var ability_scores = Global.get_stats(chardat).values()
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -55,9 +62,11 @@ func generate_value_item():
 		item.add_theme_color_override("font_color",Color("black"))
 		item.add_theme_stylebox_override("normal",StyleBoxFlat.new())
 		item.get_theme_stylebox("normal").bg_color = Color.TRANSPARENT
+
 		item.get_theme_stylebox("normal").border_width_bottom = 1
 		item.get_theme_stylebox("normal").border_color = Color.BLACK
-		item.text = value_data[i]
+		item.text = str(int(ability_scores[i]))
+
 		value.add_child(item)
 
 func generate_grid_item():
@@ -65,8 +74,12 @@ func generate_grid_item():
 		child.queue_free()
 	for i in range(item_data.size()):
 		var item = Label.new()
-		item.text = item_data[i]
 		item.add_theme_color_override("font_color",Color("black"))
+
+		item.add_theme_color_override("font_color",Color("CC6600"))
+		item.add_theme_font_size_override("font_size",16)
+		item.text = ability_names[i]
+
 		grid.add_child(item)
 		
 
