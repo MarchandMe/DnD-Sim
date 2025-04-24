@@ -45,9 +45,30 @@ func d4():
 	return roll_single_dice(1,4)
 func d3():
 	return roll_single_dice(1,3)
+func d2():
+	return roll_single_dice(1,2)
+func coin():
+	if roll_single_dice(1,2) == 1:
+		return "Heads"
+	else:
+		return "Tails"	
 
 func roll_multiple_dice(dicestr: String):
-	return 0
+	var dice_array = dicestr.rsplit(" ")
+	var tot = 0
+	for dice in dice_array:
+		if dice.left(1) == "d":
+			tot = tot + roll_single_dice(1, int(dice.right(-1)))
+		else:
+			tot = tot + int(dice)
+	return tot
+
+func roll(dicestrs: Array):
+	var tot = 0
+	for dstr in dicestrs:
+		tot = tot + roll_multiple_dice(dstr)
+	return tot
+		
 
 func _ready() -> void:
 	randomize() # init randomizer
@@ -56,5 +77,7 @@ func _ready() -> void:
 	print(get_stats(chardat))
 	var abm = calc_ability_modifiers(chardat)
 	print(abm)
-	print(d3())
+	
+	var testdicestring = "3 d4 d4 d4"
+	print(roll_multiple_dice(testdicestring))
 	

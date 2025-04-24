@@ -1,9 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://p0slc74hoh0w"]
-
-[ext_resource type="Script" uid="uid://boy48y21jk8ri" path="res://scenes/testscript.gd" id="1_o5qli"]
+[gd_scene format=3 uid="uid://p0slc74hoh0w"]
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_o5qli")
 
 [node name="Label" type="Label" parent="."]
 offset_left = 621.0
