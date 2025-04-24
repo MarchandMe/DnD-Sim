@@ -1,5 +1,8 @@
 extends Node2D
 
+var curchar = "res://data/player data/playerchartemplatetest.json"
+
+
 func load_from_file(path: String):
 	var file = FileAccess.open(path, FileAccess.READ)
 	var content = file.get_as_text()

@@ -3,7 +3,7 @@ extends Node2D
 
 @onready var grid = $AbilityContainer
 @onready var value = $AmountContainer
-var chardat = Global.load_json("res://data/player data/playerchartemplatetest.json")
+var chardat = Global.load_json(Global.curchar)
 var ability_names = ["Str", "Dex", "Con", "Int", "Wis", "Cha"]
 var ability_scores = Global.get_stats(chardat).values()
 
