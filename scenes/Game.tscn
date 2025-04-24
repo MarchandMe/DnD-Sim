@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://sr3utapbcjq7"]
 
-[ext_resource type="Script" uid="uid://be4hfylxklhce" path="res://Scripts/game.gd" id="1_iukft"]
+[ext_resource type="Script" uid="uid://be4hfylxklhce" path="res://scripts/game.gd" id="1_iukft"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_iukft"]
 load_path = "res://.godot/imported/Background.png-3c532b88ca2ff95721aa8d0294429b73.ctex"
