@@ -32,6 +32,13 @@ func calc_ability_modifiers(chardat: Dictionary):
 	bonuses["charisma"] = int(stats["charisma"]/2) - 5
 	return bonuses
 
+func calc_max_hp(chardat: Dictionary):
+	var conbonus = calc_ability_modifiers(chardat)["constitution"]
+	
+	#need to add hill dwarf mod
+	#need to add sorc mod
+	
+
 func roll_single_dice(lb: int, ub:int): #upper and lower bounds, inclusive
 	return randi()%(ub-lb+1) + lb
 

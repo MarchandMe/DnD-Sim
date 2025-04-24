@@ -9,6 +9,7 @@ var ability_scores = Global.get_stats(chardat).values()
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	#generate the ability scores columns
 	grid.columns = 1
 	grid.add_theme_constant_override("h_separation",10)
 	grid.add_theme_constant_override("v_separation",16)
@@ -17,6 +18,10 @@ func _ready() -> void:
 	value.add_theme_constant_override("v_separation",7)
 	generate_grid_item()
 	generate_value_item()
+	
+	#load in lvl, exp, hp
+	
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
